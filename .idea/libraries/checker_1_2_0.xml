@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="checker-1.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pushtorefresh.java-private-constructor-checker/checker/1.2.0/515f9e76e6aa7ca693c19350e603294f20ea44c0/checker-1.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pushtorefresh.java-private-constructor-checker/checker/1.2.0/9fda7879bcd991a2c7cce861c8aecfb1776322f0/checker-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

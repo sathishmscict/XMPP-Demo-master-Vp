@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/WrapContent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_common"
+    tools:ignore="RtlHardcoded,RtlSymmetry,ContentDescription">
+
+    <ImageView
+        android:id="@+id/image_attachment_preview"
+        android:layout_width="@dimen/chat_attachment_preview_size"
+        android:layout_height="@dimen/chat_attachment_preview_size"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="@dimen/chat_attachment_preview_size"
+        android:layout_height="@dimen/chat_attachment_preview_size"
+        android:adjustViewBounds="true"
+        android:background="@drawable/gradient_attachment" />
+
+    <ImageButton
+        android:id="@+id/button_attachment_preview_delete"
+        style="@style/BorderlessImageButtonStyle"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:padding="4dp"
+        android:layout_gravity="top|right"
+        android:src="@drawable/ic_close" />
+
+    <in.quantumtech.xmpp.views.CircleProgressBar
+        android:id="@+id/uploading_progress"
+        android:layout_width="48dp"
+        android:layout_gravity="center"
+        app:progressbarColor="@color/colorAccent"
+        app:progressBarThickness="4dp"
+        android:layout_height="48dp" />
+</FrameLayout>

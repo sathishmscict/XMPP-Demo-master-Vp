@@ -1,0 +1,15 @@
+<resources>
+    <!--
+        Base application theme for API 21+.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
+        <!-- API 21 theme customizations can go here. -->
+    </style>
+
+    <style name="AppThemeLightBackground.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>

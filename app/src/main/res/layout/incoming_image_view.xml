@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/message_date_separator" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/activatedBackgroundIndicator">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:paddingLeft="12dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="2dp"
+            android:layout_margin="@dimen/message_layout_margin"
+            android:background="@drawable/msg_in">
+
+            <TextView
+                android:id="@+id/group_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="4dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/layout_image"
+                android:layout_width="@dimen/chat_message_attachment_size"
+                android:layout_height="@dimen/chat_message_attachment_size"
+                android:layout_below="@id/group_user_name">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:scaleType="centerCrop" />
+
+                <FrameLayout
+                    android:id="@+id/download_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_attachment">
+
+                    <in.quantumtech.xmpp.views.CircleProgressBar
+                        android:id="@+id/sending_progress"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/circle_bg"
+                        android:layout_gravity="center"
+                        app:progressBarThickness="4dp"
+                        app:progressbarColor="@color/colorAccent" />
+
+                    <ImageView
+                        android:id="@+id/download"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_file_download"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_cancel_download"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/media_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="16dp"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold|italic" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/layout_image"
+                android:layout_marginBottom="-16dp"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </FrameLayout>
+</merge>

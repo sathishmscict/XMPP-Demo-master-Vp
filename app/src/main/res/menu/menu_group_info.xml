@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mstr.letschat.in.mstr.letschat.activities.GroupInfoActivity">
+    <item
+        android:id="@+id/action_add_person"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_person_add"
+        android:title="Add User"
+        app:showAsAction="always" />
+</menu>

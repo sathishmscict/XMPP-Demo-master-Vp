@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="smack-legacy-4.1.9">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.igniterealtime.smack/smack-legacy/4.1.9/e439b70e717880ecaf22ba703bee41cfc0825fee/smack-legacy-4.1.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.igniterealtime.smack/smack-legacy/4.1.9/b5f10c6640a0e5c8bf77fa7fbcabf3288f26ef21/smack-legacy-4.1.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
